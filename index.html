@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strong Password Generator | Yash's GitHub</title>
+  
+  <!-- Link to External CSS File -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Strong Password Generator</h1>
+    <div class="links">
+      <p>Created by <strong><a href="https://github.com/soyalk9" target="_blank">Yash</a></strong></p>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Password length selector -->
+    <div>
+      <label for="password-length">Password Length: <span id="length-value">16</span></label>
+      <input type="range" id="password-length" min="8" max="32" value="16">
+    </div>
+
+    <!-- Checkbox options -->
+    <div class="checkbox-group">
+      <label><input type="checkbox" id="uppercase" checked> Include Uppercase Letters</label><br>
+      <label><input type="checkbox" id="lowercase" checked> Include Lowercase Letters</label><br>
+      <label><input type="checkbox" id="numbers" checked> Include Numbers</label><br>
+      <label><input type="checkbox" id="specialChars" checked> Include Special Characters (!, @, #, $, etc.)</label><br>
+      <label><input type="checkbox" id="excludeAmbiguous"> Exclude Ambiguous Characters (e.g., 1, I, l, O, 0)</label><br>
+      <label><input type="checkbox" id="pronounceable"> Generate Pronounceable Password</label><br>
+    </div>
+
+    <!-- Password display section -->
+    <div class="password-display">
+      <p id="password-display">Click "Generate" to get a strong password!</p>
+    </div>
+    
+    <!-- Password strength indicator -->
+    <div class="password-strength" id="password-strength">
+      Strength: <span id="strength-text">Weak</span>
+    </div>
+    
+    <!-- Buttons -->
+    <button id="generate-btn">Generate Password</button>
+    <button id="copy-btn"><i class="fas fa-clipboard"></i> Copy</button>
+  </main>
+
+  <footer>
+    <p>Built with ❤️ by <a href="https://github.com/soyalk9" target="_blank">Yash</a></p>
+  </footer>
+
+  <!-- Link to External JS File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
